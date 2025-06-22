@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlogSphere</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <div class="container">
-
     <!-- Sidebar -->
     <aside class="sidebar">
       <img src="images/profile-photo.jpeg" alt="Profile Photo" class="profile-img" />
@@ -20,36 +20,34 @@
         <p>If you'd like to get in touch,<br>feel free to email me.</p>
         <a href="mailto:abc15@gmail.com" class="email-link">abc15@gmail.com</a>
       </div>
-    </aside>
+    </aside> 
 
-    <!-- Main Blog Content -->
-    <main class="main-content">
-      <h1>BLOG SPHERE</h1>
-      <p class="intro">
-        BlogSphere is a user-friendly platform. This platform provides an engaging space for users to create and share blog posts, comment on articles, and navigate content seamlessly.
-      </p>
+    <!-- Main Content -->
+    <main class="content">
+      <!-- About Me Section -->
+      <section id="about" class="about">
+        <h1>About me</h1>
+        <h2>Hello, I am <br><span>Priyanka Choudhary</span></h2>
+        <p class="subtitle">Frontend Developer</p>
+        <p class="bio">
+          I am currently pursuing a B.Tech in Information Technology (Artificial Intelligence & Robotics) at Madhav Institute of Technology and Science, Gwalior. My aggregate CGPA is 8.31. My interests lie in Web Development, Machine Learning and DSA. In addition, I've completed some projects—a low light image enhancer website and an employee management system—along with various frontend projects. My web development tech stack includes HTML, CSS, React.js and MySQL. I'm proficient in programming with Python and C++. I consider myself an enthusiastic learner and always strive to excel in any assigned task.
+        </p>
+      </section>
 
-      <!-- Placeholder for JS blog posts -->
-      <div id="posts-container"></div>
+      <!-- Skills Section -->
+      <div id="skills" class="skills-section">
+        <h2 class="skills-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill"><div class="circle" style="--percent: 70;"></div><label>HTML</label></div>
+          <div class="skill"><div class="circle" style="--percent: 60;"></div><label>CSS</label></div>
+          <div class="skill"><div class="circle" style="--percent: 70;"></div><label>Python</label></div>
+          <div class="skill"><div class="circle" style="--percent: 65;"></div><label>C++</label></div>
+          <div class="skill"><div class="circle" style="--percent: 25;"></div><label>DSA</label></div>
+          <div class="skill"><div class="circle" style="--percent: 45;"></div><label>React</label></div>
+          <div class="skill"><div class="circle" style="--percent: 50;"></div><label>MySQL</label></div>
+        </div>
+      </div>
     </main>
-
-    <!-- Right Sidebar -->
-    <aside class="right-bar">
-      <h3>Categories</h3>
-      <ul>
-        <li>Technology</li>
-        <li>AI & ML</li>
-        <li>Web Development</li>
-      </ul>
-
-      <h3>Recent Posts</h3>
-      <ul id="recent-posts">
-        <!-- Filled dynamically -->
-      </ul>
-    </aside>
-
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
