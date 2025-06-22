@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlogSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="images/profile-photo.jpeg" alt="Profile Photo" class="profile-img" />
+      <h2 class="name">Priyanka Choudhary</h2>
+
+      <!-- Contact Info -->
+      <div class="sidebar-contact">
+        <h3>Contact Me</h3>
+        <p>If you'd like to get in touch,<br>feel free to email me.</p>
+        <a href="mailto:abc15@gmail.com" class="email-link">abc15@gmail.com</a>
+      </div>
+    </aside>
+
+    <!-- Main Blog Content -->
+    <main class="main-content">
+      <h1>BLOG SPHERE</h1>
+      <p class="intro">
+        BlogSphere is a user-friendly platform. This platform provides an engaging space for users to create and share blog posts, comment on articles, and navigate content seamlessly.
+      </p>
+
+      <!-- Placeholder for JS blog posts -->
+      <div id="posts-container"></div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-bar">
+      <h3>Categories</h3>
+      <ul>
+        <li>Technology</li>
+        <li>AI & ML</li>
+        <li>Web Development</li>
+      </ul>
+
+      <h3>Recent Posts</h3>
+      <ul id="recent-posts">
+        <!-- Filled dynamically -->
+      </ul>
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
